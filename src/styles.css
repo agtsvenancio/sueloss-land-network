@@ -3,7 +3,7 @@
 @source "../src";
 @custom-variant dark (&:is(.dark *));
 :root {
- --forest: oklch(0.325 0.043 155.2); --moss: oklch(0.495 0.065 137.9); --ink: oklch(0.245 0.006 118.5); --paper: oklch(0.968 0.01 94.3); --sand: oklch(0.932 0.024 88.4); --stone: oklch(0.834 0.024 90); --linen: oklch(0.908 0.021 88); --soil: oklch(0.356 0.034 54.5);
+ --forest: oklch(0.3252645 0.0426323 160.99156); --moss: oklch(0.4947595 0.0653368 139.60694); --ink: oklch(0.2455528 0.0057605 121.87187); --paper: oklch(0.9697600 0.0095093 93.56823); --sand: oklch(0.9319148 0.0238289 88.23798); --stone: oklch(0.8337861 0.0244604 88.25133); --linen: oklch(0.9073468 0.0211246 88.72671); --soil: oklch(0.3582984 0.0336980 53.62819);
  --background:var(--paper); --foreground:var(--ink); --card:var(--sand); --card-foreground:var(--ink); --popover:var(--paper); --popover-foreground:var(--ink); --primary:var(--forest); --primary-foreground:var(--paper); --secondary:var(--sand); --secondary-foreground:var(--forest); --muted:var(--linen); --muted-foreground:var(--moss); --accent:var(--linen); --accent-foreground:var(--forest); --destructive:var(--soil); --destructive-foreground:var(--paper); --border:var(--stone); --input:var(--stone); --ring:var(--moss); --radius:2px;
 }
 .dark {--background:var(--forest);--foreground:var(--paper);--card:var(--moss);--card-foreground:var(--paper);--popover:var(--forest);--popover-foreground:var(--paper);--primary:var(--paper);--primary-foreground:var(--forest);--secondary:var(--moss);--secondary-foreground:var(--paper);--muted:var(--moss);--muted-foreground:var(--stone);--accent:var(--moss);--accent-foreground:var(--paper);--border:var(--moss);--input:var(--moss);--ring:var(--stone)}
