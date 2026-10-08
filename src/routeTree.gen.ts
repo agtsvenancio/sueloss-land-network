@@ -10,33 +10,115 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as InvestidoresRouteImport } from './routes/investidores'
+import { Route as MetodoRouteImport } from './routes/metodo'
+import { Route as NewsRouteImport } from './routes/news'
+import { Route as PrivacidadeRouteImport } from './routes/privacidade'
+import { Route as RedeRouteImport } from './routes/rede'
+import { Route as TermosRouteImport } from './routes/termos'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InvestidoresRoute = InvestidoresRouteImport.update({
+  id: '/investidores',
+  path: '/investidores',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MetodoRoute = MetodoRouteImport.update({
+  id: '/metodo',
+  path: '/metodo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsRoute = NewsRouteImport.update({
+  id: '/news',
+  path: '/news',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacidadeRoute = PrivacidadeRouteImport.update({
+  id: '/privacidade',
+  path: '/privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RedeRoute = RedeRouteImport.update({
+  id: '/rede',
+  path: '/rede',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermosRoute = TermosRouteImport.update({
+  id: '/termos',
+  path: '/termos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/investidores': typeof InvestidoresRoute
+  '/metodo': typeof MetodoRoute
+  '/news': typeof NewsRoute
+  '/privacidade': typeof PrivacidadeRoute
+  '/rede': typeof RedeRoute
+  '/termos': typeof TermosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/investidores': typeof InvestidoresRoute
+  '/metodo': typeof MetodoRoute
+  '/news': typeof NewsRoute
+  '/privacidade': typeof PrivacidadeRoute
+  '/rede': typeof RedeRoute
+  '/termos': typeof TermosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/investidores': typeof InvestidoresRoute
+  '/metodo': typeof MetodoRoute
+  '/news': typeof NewsRoute
+  '/privacidade': typeof PrivacidadeRoute
+  '/rede': typeof RedeRoute
+  '/termos': typeof TermosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/investidores'
+    | '/metodo'
+    | '/news'
+    | '/privacidade'
+    | '/rede'
+    | '/termos'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/investidores'
+    | '/metodo'
+    | '/news'
+    | '/privacidade'
+    | '/rede'
+    | '/termos'
+  id:
+    | '__root__'
+    | '/'
+    | '/investidores'
+    | '/metodo'
+    | '/news'
+    | '/privacidade'
+    | '/rede'
+    | '/termos'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  InvestidoresRoute: typeof InvestidoresRoute
+  MetodoRoute: typeof MetodoRoute
+  NewsRoute: typeof NewsRoute
+  PrivacidadeRoute: typeof PrivacidadeRoute
+  RedeRoute: typeof RedeRoute
+  TermosRoute: typeof TermosRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +130,59 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/investidores': {
+      id: '/investidores'
+      path: '/investidores'
+      fullPath: '/investidores'
+      preLoaderRoute: typeof InvestidoresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/metodo': {
+      id: '/metodo'
+      path: '/metodo'
+      fullPath: '/metodo'
+      preLoaderRoute: typeof MetodoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news': {
+      id: '/news'
+      path: '/news'
+      fullPath: '/news'
+      preLoaderRoute: typeof NewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacidade': {
+      id: '/privacidade'
+      path: '/privacidade'
+      fullPath: '/privacidade'
+      preLoaderRoute: typeof PrivacidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rede': {
+      id: '/rede'
+      path: '/rede'
+      fullPath: '/rede'
+      preLoaderRoute: typeof RedeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/termos': {
+      id: '/termos'
+      path: '/termos'
+      fullPath: '/termos'
+      preLoaderRoute: typeof TermosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  InvestidoresRoute: InvestidoresRoute,
+  MetodoRoute: MetodoRoute,
+  NewsRoute: NewsRoute,
+  PrivacidadeRoute: PrivacidadeRoute,
+  RedeRoute: RedeRoute,
+  TermosRoute: TermosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
