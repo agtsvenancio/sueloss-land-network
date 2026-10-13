@@ -13,4 +13,5 @@
 - Use the shared language provider and explicit PT/EN/ES content tuples for all user-facing copy so locale switching stays client-safe and SSR defaults to Portuguese.
 - Keep profile intake validation in a client-safe Zod module reused by the public server function; store leads only through the privileged, insert-only database function so visitors cannot read confidential submissions.
 - Use generated local photography and bundled Natural Earth country geometry for media and cartography so no third-party image hotlinks are needed.
+- Share photographic page introductions and image treatments through the existing shell and visuals modules so public pages retain a consistent investment-focused presentation.
 - Leave unavailable company contact details and identities as explicit placeholders in the central shell configuration; never invent business information.
