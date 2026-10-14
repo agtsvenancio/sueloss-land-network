@@ -22,47 +22,50 @@
  :focus-visible{outline:2px solid var(--moss);outline-offset:5px}
 }
 .wrap{width:calc(100% - 112px);max-width:1440px;margin-inline:auto}
-.section{padding-block:88px}
-.eyebrow{font:400 11px/1.6 var(--font-mono);text-transform:uppercase}
+.section{padding-block:72px}
+.eyebrow{font:600 11px/1.6 var(--font-sans);text-transform:uppercase}
 .display{font-size:76px}
-.section-title{font-size:42px}
+.section-title{font-size:36px;font-weight:600}
 .page-title{font-size:54px;max-width:1000px}
 .topography{display:none;position:absolute;inset:0;width:100%;height:100%;pointer-events:none;color:currentColor;opacity:.1}
 .site-header{position:fixed;top:0;left:0;right:0;z-index:40;transition:background .3s,color .3s;border-bottom:1px solid transparent}
 .site-header.is-scrolled,.site-header.on-page{background:var(--paper);color:var(--forest);border-color:var(--stone)}
 .site-header.on-home{color:var(--forest);background:var(--paper);border-color:var(--stone)}
 .site-header.on-home.is-scrolled{color:var(--forest)}
-.wordmark{font-family:var(--font-sans);font-size:35px;font-weight:600;line-height:1.1}
+.wordmark{font-family:var(--font-display);font-size:38px;font-weight:700;line-height:1.1}
 .wordmark-sub{font:400 7px/1.6 var(--font-mono);margin-top:5px}
-.nav-link{font-size:12px;padding-block:24px;transition:opacity .2s}
+.nav-link{font-size:14px;font-weight:500;padding-block:24px;transition:opacity .2s}
 .nav-link:hover{opacity:.6}
 .nav-link[data-status=active]{text-decoration:underline;text-underline-offset:7px}
 .site-header .access-button{background:var(--forest);color:var(--paper);border:1px solid var(--forest)}
 .site-header.is-scrolled .access-button,.site-header.on-page .access-button{background:var(--forest);color:var(--paper);border-color:var(--forest)}
-.hero{position:relative;min-height:590px;height:calc(100svh - 44px);max-height:840px;background:var(--forest);color:var(--paper);display:flex;align-items:center;overflow:hidden}
+.hero{position:relative;min-height:550px;height:calc(100svh - 80px);max-height:760px;background:var(--forest);color:var(--paper);display:flex;align-items:center;overflow:hidden}
 .hero-image{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;object-position:center center}
-.hero-shade{position:absolute;inset:0;background:var(--ink);opacity:.25}
-.hero-content{position:relative;z-index:1;padding-top:145px;padding-bottom:106px}
-.hero h1{max-width:850px;margin-top:20px;font-size:64px;line-height:1.14;font-weight:500}
+.hero-shade{position:absolute;inset:0;background:var(--forest);opacity:.34}
+.hero-content{position:relative;z-index:1;padding-top:125px;padding-bottom:90px}
+.hero h1{max-width:650px;margin-top:22px;font-size:56px;line-height:1.12;font-weight:600}
 .hero h1 em{font-weight:400}
-.hero-copy{max-width:495px;color:var(--paper);margin-top:24px;font-size:18px;line-height:1.55}
-.hero-bottom{position:absolute;bottom:0;left:0;right:0;padding:19px 0;background:var(--forest);border-top:1px solid var(--moss)}
+.hero-copy{max-width:410px;color:var(--paper);margin-top:22px;font-size:18px;line-height:1.55}
+.hero-bottom{position:absolute;bottom:0;left:0;right:0;padding:20px 0;background:var(--paper);color:var(--forest);border-bottom:1px solid var(--stone)}
+.market-label{font-size:11px;font-weight:600;flex-shrink:0}
+.market-countries{font-size:12px;font-weight:500}
+.section-label-rule{width:24px;height:2px;background:var(--moss)}
 .hero-buttons{display:flex;gap:14px;margin-top:33px;flex-wrap:wrap}
 .hero-buttons .main-cta{background:var(--paper);color:var(--forest)}
 .hero-buttons .outline-cta{background:transparent;color:var(--paper);border-color:color-mix(in oklab,var(--paper) 45%,transparent)}
 .arrow-button{height:auto;min-height:48px;white-space:normal;justify-content:space-between;padding:14px 19px;gap:22px;box-shadow:none;font-size:12px}
 .arrow-button svg{transition:transform .25s}
 .arrow-button:hover svg{transform:translateX(4px)}
-.manifesto{font-size:36px;line-height:1.3}
+.manifesto{font-size:36px;line-height:1.2;font-weight:600}
 .manifesto em{color:var(--moss)}
 .protocol-row{display:grid;grid-template-columns:40px 1fr auto;align-items:center;border-bottom:1px solid var(--stone);padding:20px 0;gap:12px}
 .protocol-row:first-child{border-top:1px solid var(--stone)}
 .protocol-row .number{color:var(--moss);font-family:var(--font-mono);font-size:11px}
-.protocol-row h3{font-size:22px}
+.protocol-row h3{font-family:var(--font-sans);font-size:20px;font-weight:500}
 .rating{padding:40px 0;border-top:1px solid var(--stone)}
 .rating-tag{display:inline-flex;border:1px solid var(--moss);padding:8px 12px;font-family:var(--font-mono);font-size:11px;color:var(--forest);gap:12px;align-items:center}
 .rating-tag.solid{background:var(--forest);color:var(--paper);border-color:var(--forest)}
-.rating h3{font-size:30px;margin-top:27px}
+.rating h3{font-size:27px;font-weight:600;margin-top:27px}
 .rating p{max-width:430px;font-size:15px}
 .rating .spec{border-top:1px solid var(--stone);padding-top:18px;margin-top:28px;font-size:13px}
 .orchestration{display:grid;grid-template-columns:1fr 70px 1.2fr 70px 1fr;align-items:center;gap:20px;margin-top:60px}
@@ -121,7 +124,7 @@ textarea.field{min-height:95px;resize:vertical}
 em{font-style:normal;font-weight:inherit}
 .hero-image{top:96px;height:calc(100% - 96px)}
 .hero-shade{top:96px}
-.hero .eyebrow,.hero h1,.hero-copy{text-shadow:0 2px 12px color-mix(in oklab,var(--ink) 28%,transparent)}
+.hero .eyebrow{display:inline-block;border-bottom:1px solid color-mix(in oklab,var(--paper) 55%,transparent);padding-bottom:10px}
 .hero-buttons .outline-cta{border:none;border-bottom:1px solid var(--paper);padding-inline:0;margin-left:14px}
 .hero-buttons .outline-cta:hover{background:transparent;color:var(--paper)}
 .rating-photo{width:100%;aspect-ratio:1.9;object-fit:cover;margin-bottom:25px}
@@ -135,3 +138,15 @@ em{font-style:normal;font-weight:inherit}
 .page-intro-shade{position:absolute;inset:96px 0 0;background:var(--ink);opacity:.45}
 .page-intro p{color:var(--paper)}
 @media(max-width:640px){.hero-buttons .outline-cta{margin-left:0;align-self:flex-start}.territory-photograph>img{height:290px}.territory-caption{align-items:flex-start;flex-direction:column;gap:12px}.territory-caption>span:first-child{font-size:21px}.page-intro{padding-top:150px}.page-intro-photo{object-position:65% center}.rating-photo{aspect-ratio:1.6}}
+
+/* Agricultural investment hierarchy. */
+.hero .hero-image{object-position:center 54%}
+.cookie-bar{max-width:405px;padding:12px 14px}
+.page-intro .page-title{font-weight:600;font-size:46px;max-width:900px}
+.section.bg-sand{background:var(--paper)}
+.rating-tag{font-size:10px;padding:6px 10px}
+.faq-row h3{font-family:var(--font-sans);font-size:20px;font-weight:600}
+.orchestration .node h3{font-size:25px;font-weight:600}
+@media(min-width:1600px){.hero h1{font-size:64px}.hero{min-height:640px}}
+@media(max-width:1100px){.hero{min-height:550px}.hero h1{font-size:50px}.nav-link{font-size:13px}.market-countries{gap:12px}}
+@media(max-width:640px){.hero{height:calc(100svh - 65px);min-height:620px}.hero-content{padding-top:140px;padding-bottom:125px}.hero h1{font-size:39px}.hero-copy{font-size:17px;max-width:295px}.hero .hero-image{object-position:62% center}.hero-shade{opacity:.42}.hero-bottom{padding:16px 0}.hero-bottom>.wrap{align-items:flex-start;gap:10px;flex-direction:column}.market-countries{font-size:10px;gap:6px 14px}.market-label{font-size:10px}.hero-buttons{max-width:285px;margin-top:24px}.hero-buttons .arrow-button{font-size:13px}.manifesto{font-size:29px}.page-intro .page-title{font-size:32px}.section-title{font-size:29px}.cookie-bar{max-width:none}}
