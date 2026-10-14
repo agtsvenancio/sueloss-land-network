@@ -14,4 +14,5 @@
 - Keep profile intake validation in a client-safe Zod module reused by the public server function; store leads only through the privileged, insert-only database function so visitors cannot read confidential submissions.
 - Use generated local photography and bundled Natural Earth country geometry for media and cartography so no third-party image hotlinks are needed.
 - Share photographic page introductions and image treatments through the existing shell and visuals modules so public pages retain a consistent investment-focused presentation.
+- Keep agricultural investment presentation rules in shared global styles and shared shell/visuals; this keeps public pages consistent without duplicating layout rules per route.
 - Leave unavailable company contact details and identities as explicit placeholders in the central shell configuration; never invent business information.
