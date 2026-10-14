@@ -1,5 +1,5 @@
 # Sueloss
-- [ ] Replace generic presentation with a restrained agricultural investment direction and verify the public experience
+- [x] Replace generic presentation with a restrained agricultural investment direction and verify the public experience
 - [x] Refresh investment-focused presentation, typography and expansive agricultural imagery; verify navigation and mobile layouts
 - [x] Editorial identity, shared navigation, responsive home and cartographic visuals
 - [x] Method, investors, network, news and legal pages
